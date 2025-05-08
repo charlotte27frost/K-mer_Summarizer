@@ -1,0 +1,10 @@
+AAT:1, next G:1
+ACG:2, next A:1, T:1
+ATG:1, next C:1
+CGA:1, next END:1
+CGT:2, next A:1, END:1
+GCA:1, next END:1
+GTA:1, next C:1
+TAC:2, next G:2
+TGC:1, next A:1
+TTA:1, next C:1
