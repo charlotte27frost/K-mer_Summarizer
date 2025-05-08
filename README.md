@@ -10,6 +10,7 @@ The K-mer summarizer is a command-line Python script for counting k-mers and col
 - Includes a suite of Pytest unit tests for reliability
 ------------
 ## Project Structure
+```
 kmer-summarizer/
 │
 ├── summarize_kmer.py       # Main script for parsing, counting, and output
@@ -21,6 +22,7 @@ kmer-summarizer/
 ├── input.fa                # Example input file
 ├── output.txt              # Example output file created by script
 └── README.md               # Project documentation
+```
 ------------
 ## Usage
 ### 1. Requirements
