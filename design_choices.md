@@ -49,25 +49,25 @@ The nested dictionary strikes a balance between performance, simplicity, and fle
 ## Handling Edge Cases
 The script is designed to handle several edge cases that could arise:
 
-**Sequences shorter than `k`**
+**Sequences shorter than `k`:**
 These are skipped entirely, as no valid k-mers can be extracted
 
-**Terminal k-mers**
+**Terminal k-mers:**
 If a k-mer is at the end of a sequence with no character following it, the next character is recorded as `"END"`
 
-**Sequences exactly equal to `k`**
+**Sequences exactly equal to `k`:**
 A single k-mer is extracted and paired with the special `"END"` marker to indicate no following character.
 
-**Empty sequences**
+**Empty sequences:**
 These are ignored automatically during processing--no k-mers are extracted, and no errors are raised.
 
-**Single-nucleotide k-mers (`k=1`)**
+**Single-nucleotide k-mers (`k=1`):**
 Handed like any other k value.  Each nucleotide is paried with the next one, and the last nucleotide is followed by `"END"`.
 
-**Multiple contigs in a file**
+**Multiple contigs in a file:**
 Each contig is treated independently--no k-mers are extracted across contig boundaries
 
-**FASTA headers**
+**FASTA headers:**
 Lines starting with `>` are used to identify new contigs and are not included in processing
 
 ## Avoiding Overcounting or Missing Context
