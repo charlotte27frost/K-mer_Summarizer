@@ -48,6 +48,7 @@ The nested dictionary strikes a balance between performance, simplicity, and fle
 
 ## Handling Edge Cases
 The script is designed to handle several edge cases that could arise:
+
 **Sequences shorter than `k`**
 These are skipped entirely, as no valid k-mers can be extracted
 
